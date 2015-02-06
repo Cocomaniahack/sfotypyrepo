@@ -1,2 +1,3 @@
 # sfotypyrepo
-respodiatorio nuermro 3
+Autor Julian dario
+respodiatorio nuermro de

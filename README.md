@@ -1,4 +1,4 @@
-Autor: @julian dario lopez 
+Autor: @julian dario lope 
 # sfotypyrepo
 
 respodiatorio nuermro de

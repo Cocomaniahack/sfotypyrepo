@@ -1,3 +1,4 @@
+Autor: @julian dario lopez 
 # sfotypyrepo
-Autor Julian dario
+
 respodiatorio nuermro de

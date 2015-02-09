@@ -1,0 +1,96 @@
+@import url("normalize.css");
+@import url("style.css");
+body{font-size: 16px;font-family: 'Varela Round', sans-serif;}
+figure{margin: 0;}
+p{margin: .5em 0;}
+header{ height: 3.5em}
+a{text-decoration: none;}
+
+.header{height: 3.5em}
+.relative{position: relative;}
+.menu{
+	display: none;
+     }
+.buttom-menu{position: absolute; top: 50%; margin-top: -10px;left: .5em; color: #333333} 
+.border-botton {border-bottom:  1px solid #818181}    
+
+.tittle{
+    	font-size: 1.1em;
+    	text-align: center;
+    	margin: 0;
+    	line-height: 3.5em;
+        }  
+
+
+.contenido{
+	padding: 1.4rem;
+	font-size: 0;
+	text-align: center;
+	}
+.action{
+    color: white;
+    margin-right: .5em;
+
+}
+.gray{color: #333333}    
+.action:last-child{margin: 0}
+.actions{
+    position: absolute;
+    background: rgba(0,0,0,.3);
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.padding{ padding: 1em}
+.padding-tb{padding: 1em 0}
+.rigth-text{text-align:right;}
+.relative{position: relative;}
+.center-block{margin: 0 auto}
+.center-text{text-align: center;}   
+
+.song{
+    display: inline-block;
+    font-size: 1rem;
+    width: 8rem;
+    margin-right: 1em;
+
+    }
+.song:nth-child(even){
+	margin-right: 0;
+}
+.name{color: #333333}
+.autor{color: #818181}
+.playing{}
+.small{width: 20em;}
+.progress{
+    margin: 1em 0;
+    position: relative;
+}
+.min{font-size: .8em; position: absolute; right: 0; top: -5px}
+.max{font-size: .8em; position: absolute; left: 0; top: -5px}
+
+.total{
+    height: 5px;
+    background: #818181;
+    width: 75%;
+    margin: 0 auto;
+    
+}
+.state{
+    height: 5px;
+    background: red;
+    position: relative;
+    width: 30%;
+    
+}
+.circle{
+    background: #333333;
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    top: -2px;
+    height: 10px;
+    width: 10px;
+}
+
+

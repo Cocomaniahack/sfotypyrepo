@@ -5,42 +5,19 @@ figure{margin: 0;}
 p{margin: .5em 0;}
 header{ height: 3.5em}
 a{text-decoration: none;}
+ul{margin: 0; padding: 0}
 
 .header{height: 3.5em}
 .relative{position: relative;}
-.menu{
-	display: none;
-     }
+.menu{display: none;}
 .buttom-menu{position: absolute; top: 50%; margin-top: -10px;left: .5em; color: #333333} 
 .border-botton {border-bottom:  1px solid #818181}    
-
-.tittle{
-    	font-size: 1.1em;
-    	text-align: center;
-    	margin: 0;
-    	line-height: 3.5em;
-        }  
-
-
-.contenido{
-	padding: 1.4rem;
-	font-size: 0;
-	text-align: center;
-	}
-.action{
-    color: white;
-    margin-right: .5em;
-
-}
+.tittle{font-size: 1.1em;text-align: center;margin: 0;line-height: 3.5em; }  
+.contenido{padding: 1.4rem;font-size: 0;text-align: center;}
+.action{color: white; margin-right: .5em;}
 .gray{color: #333333}    
 .action:last-child{margin: 0}
-.actions{
-    position: absolute;
-    background: rgba(0,0,0,.3);
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
+.actions{position: absolute; background: rgba(0,0,0,.3); bottom: 0; left: 0; right: 0;}
 .padding{ padding: 1em}
 .padding-tb{padding: 1em 0}
 .rigth-text{text-align:right;}
@@ -60,7 +37,7 @@ a{text-decoration: none;}
 }
 .name{color: #333333}
 .autor{color: #818181}
-.playing{}
+.paying{}
 .small{width: 20em;}
 .progress{
     margin: 1em 0;
@@ -92,5 +69,48 @@ a{text-decoration: none;}
     height: 10px;
     width: 10px;
 }
+.left{float: left;}
+.right{float: right;}
+.wrap{ width: 1000px}
+.round{border-radius: 50%; overflow: hidden;}
+.input{border: 1px solid #818181 ; height: 2.5em; border-radius: 5px;
+padding: 0 1em 0 2em
 
+}
+.search-icon{position: absolute; left: .5em; top: .8em; color: #818181}
+.close-icon{color: #818181; position: absolute; top: .5em; right: .5em; font-size: 1.2em}
+@media screen and (min-width: 480px) {
+    body {
+     
+
+    }
+    .image img{width: 100%; height: auto;}
+    .song:nth-child(even)
+    {
+    margin-right: 1em;
+    }
+    .medium{width: auto;}
+}
+@media screen and (min-width: 1000px) {
+    body{background: #f0f0f0}
+    .menu{display: block; background: #f0f0f0; overflow: hidden;}
+    .item{float: left; list-style: none;}
+    .item a{color: #333333; text-transform: uppercase;cursor: pointer;padding: 1em; display: block; border-top: 5px solid transparent}
+    .item a:hover{border-top: 5px solid #818181}
+    .buttom-menu{display: none;}
+    .tittle{display: none;}
+    .header{height: auto;}
+    .isotipo{width: 122px;}
+    .logo{padding: 1.3em 0; overflow: hidden; background: white}
+    .avatar{width: 38px; height: 38px}
+    .username{position: relative;color: #818181; top: 9px; margin-left: .5em;}
+    .username:after{content:""; 
+    border-left: 7px solid transparent;
+     border-top: 9px solid #818181; 
+     border-right: 7px solid transparent;
+     margin-left: .4em;
+
+     display: inline-block;}
+    
+} 
 

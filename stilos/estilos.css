@@ -110,8 +110,16 @@ padding: 0 1em 0 2em
 }
 .search-icon{position: absolute; left: .5em; top: .8em; color: #818181}
 .close-icon{color: #818181; position: absolute; top: .5em; right: .5em; font-size: 1.2em}
-.playlist{display: none}
-.logo{display: none;}
+
+
+.playlist{display: none; width: 22em; padding: 0 2em; border-left: 1px solid #818181}
+.playlist .list{list-style: none;}
+.playlist .item{padding: 1em 0;}
+.isotipo{width: 122px;}
+.logo{display: none; padding: 1.3em 0; overflow: hidden; background: white}
+.avatar{width: 38px; height: 38px}
+.username{position: relative;color: #818181; top: 9px; margin-left: .5em;}
+.username:after{content:"";  border-left: 7px solid transparent;border-top: 9px solid #818181; border-right: 7px solid transparent; margin-left: .4em;display: inline-block;}
 @media screen and (min-width: 480px) {
     body {
      
@@ -128,25 +136,21 @@ padding: 0 1em 0 2em
     body{background: #f0f0f0}
     .menu{display: block; background: #f0f0f0; overflow: hidden; border-top: 1px solid #818181}
     .menu .item{float: left; list-style: none;}
+    .menu .list{}
     .menu .item a{color: #333333; text-transform: uppercase;cursor: pointer;padding: 1em; display: block; border-top: 5px solid transparent}
     .menu .item a:hover{border-top: 5px solid #818181}
     .buttom-menu{display: none;}
-    .list .item{}
     .paying{padding-top: 1em;}
     .gray {color: #818181}
     .tittle{display: none;}
     .header{height: auto; border: none;}
-    .isotipo{width: 122px;}
-    .logo{display: block; padding: 1.3em 0; overflow: hidden; background: white}
-    .avatar{width: 38px; height: 38px}
-    .username{position: relative;color: #818181; top: 9px; margin-left: .5em;}
-    .username:after{content:"";  border-left: 7px solid transparent;border-top: 9px solid #818181; border-right: 7px solid transparent; margin-left: .4em;display: inline-block;}
+    
     .music{width: 32.5em; float: left;}
     .description{display: none;}
-    .playlist{display: block; width: 22em; padding: 0 2em; border-left: 1px solid #818181}
-    .playlist .list{list-style: none;}
-    .playlist .item{padding: 1em 0;}
+    
     .large{margin: 0 auto; width: 62.5em; overflow: hidden;}
+    .logo{display: block;}
+    .playlist{display: block;}
 
 } 
 

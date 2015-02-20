@@ -46,7 +46,7 @@ ul{margin: 0; padding: 0}
 .song:nth-child(even){
 	margin-right: 0;
 }
-.name{color: #333333}
+.name{color: #333333; font-size: 14px}
 .autor{color: #818181}
 .paying {margin: 0 auto}
 .small{width: 20em}

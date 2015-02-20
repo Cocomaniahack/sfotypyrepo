@@ -5,4 +5,8 @@ var Sfotipy = {
   Router: {}
 };
 
+<<<<<<< HEAD
 window.Sfotipy = Sfotipy;//namesspace
+=======
+window.Sfotipy = Sfotipy;  // definicion del namespace
+>>>>>>> origin/master

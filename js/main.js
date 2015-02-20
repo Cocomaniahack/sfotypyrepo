@@ -1,5 +1,6 @@
 //instanciacion de las rutas
 
+<<<<<<< HEAD
 $(function(){
 
 Sfotipy.app = new Sfotipy.Router();
@@ -7,6 +8,15 @@ Sfotipy.app = new Sfotipy.Router();
 });
 
 /*Sfotipy = {};
+=======
+/*$(function(){
+
+Sfotipy.app = new Sfotipy.Router();
+
+});*/
+
+Sfotipy = {};
+>>>>>>> origin/master
 
 Sfotipy.Song = Backbone.Model.extend({});//clases cancion
 
@@ -37,7 +47,11 @@ className: 'item border-botton',
 	this.$el.html("<span>"+ autor +"</span> - <span>"+ name +"</span>");
 }//render: se visualiara cuando se eecute esta vista en pantalla*/
 
+<<<<<<< HEAD
 /*template: Handlebars.compile($("#song-template").html()),
+=======
+template: Handlebars.compile($("#song-template").html()),
+>>>>>>> origin/master
 
 initialize: function(){
 //this.listenTo(this.model, "change" , this.render, this);
@@ -50,7 +64,11 @@ this.listenTo(this.collection, "reset", this.render, this);
     this.listenTo(this.collection, "reset", this.render, this);
   },*/
 
+<<<<<<< HEAD
 /*render: function (){
+=======
+render: function (){
+>>>>>>> origin/master
  this.$el.empty();
     this.addAll();
 },

@@ -145,12 +145,13 @@ padding: 0 1em 0 2em
     .tittle{display: none;}
     .header{height: auto; border: none;}
     
-    .music{width: 32.5em; float: left;}
+    .music{width: 22.5em; float: left;}
     .description{display: none;}
     
-    .large{margin: 0 auto; width: 62.5em; overflow: hidden;}
+    .large{margin: 0 auto; width: 52.5em; overflow: hidden;}
     .logo{display: block;}
     .playlist{display: block;}
+    .authors{border: px solid ; width: 225px; height: 49px;} 
 
 } 
 

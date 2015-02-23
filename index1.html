@@ -68,44 +68,99 @@
     </div>	
 
 </header>
-
-
-
-
 <section class="paying small medium large">
-  
    <div class="music">
+	<figure class="image relative">
+		 <img src="img/songs/girl.jpeg" width="320" heigth="320"   alt="Come Get it Be Pharrel Williams">
+		 <div class="actions padding rigth-text">
+		 	<a href="" class="action  icon-plus"></a>
+		 	<a href="" class="action  icon-heart"></a>
+		 	<a href="" class="action  icon-share"></a>
+		 </div>
+	</figure>
+	<div class="padding">
+	 <div class="progress">
+		<span class="min">0:45</span>
+		<div class="total">
+			<div class="state">
+				<div class="circle">
 
-	
+				</div>
+			</div>
+		</div>
+		<span class="max">4:10</span>
+	 </div>
+	 <div class="description center-text border-botton">
+		<p class="name">
+			Come Get it Be
+		</p>
+		<p class="autor">
+			Pharrell Williams
+		</p>
+	 </div>
+	 <div class="play center-text padding-tb">
+		<a href="" class="action gray icon-first"></a>
+		<a href="" class="action gray icon-play3"></a>
+		<a href="" class="action gray icon-last"></a>
+		<a href="" class="action gray icon-shuffle"></a>
+		<a href="" class="action gray icon-volume-high"></a>
+	 </div>
+	</div>
    </div>
 
 	
 	<div class="playlist right">
-    <div class="authors">
-   
-   </div>
-
+    <p class="name">
+    	Grils
+    </p>
+    <p class="author">
+    	Pharrel Willimas
+    </p>
     <ul class="list lista">
-
+     
+     
+      <li class="item border-botton">
+       <span>
+        it Girl
+        </span>
+       <span class="right">
+       <a href="" class="action icon-plus gray "></a>
+       <a href="" class="action icon-heart gray"></a>
+       <a href="" class="action icon-share gray"></a>
+       </span>
+      </li>
     </ul>
-    
 	</div>
 
 </section>
+<section  class="contenido">
+	  <article class="song">
+		  <figure class="image">
+		  <img src="img/songs/test.jpeg" width="128" heigth="128"  alt="Girl Pharrel Williams">
+		  </figure>
+		   <p class="name">Girl</p>
+		   s<p class="autor">Pharrel Willimas</p>
+    </article>
+    <article class="song">
+		 <figure class="image">
+		  <img src="img/songs/ride-the-lightning.jpg" width="128" heigth="128"  alt="ride-the-lightning">
+		 </figure>
+		 <p class="name">ride-the-lightnin</p>
+		 <p class="autor">Metallica</p>
+    </article>
+</section>
 
 
-
- <section id="albums" class="container contenido">
+ <section id="albums" class="container">
   </section>
 
-  <!-- Templates <div class="music">  views/player -->
+  <!-- Templates -->
   <script id="player-template" type="text/x-handlebars-template">
-    
     <figure class="image relative">
         <img src="{{album_cover}}" width="320" height="320" alt="{{name}} - {{author}}">
         <div class="actions padding right-text">
-          <a href="#" class="action icon-plus"></a>
-          <a href="#" class="action icon-heart"></a>
+          <a href="#" class="action icon-add"></a>
+          <a href="#" class="action icon-love"></a>
           <a href="#" class="action icon-share"></a>
         </div>
       </figure>
@@ -130,20 +185,15 @@
           </p>
         </div>
         <div class="play center-text padding-tb">
-          <a href="" class="action gray icon-first"></a>
-          <a href="" class="action gray icon-play3"></a>
-          <a href="" class="action gray icon-last"></a>
-          <a href="" class="action gray icon-shuffle"></a>
-          <a href="" class="action gray icon-volume-high"></a>
+          <a href="" class="action gray icon-prev"></a>
+          <a href="" class="action gray icon-play"></a>
+          <a href="" class="action gray icon-next"></a>
+          <a href="" class="action gray icon-random"></a>
+          <a href="" class="action gray icon-vol"></a>
         </div>
       </div>
-   
   </script>
 
-
-
-  
-    <!--view player <div class="">  -->
   <script id="current-album-template" type="text/x-handlebars-template">
     <p class="name">
       {{name}}
@@ -153,24 +203,19 @@
     </p>
   </script>
 
-
-        <!--view song   <ul class="list lista">-->
   <script id="song-template" type="text/x-handlebars-template">
-
-
+    <li class="item border-botton">
     <span>
       {{name}} - ({{length}})
     </span>
     <span class="right">
-      <a href="#" class="action icon-plus gray"></a>
-      <a href="#" class="action icon-heart gray"></a>
-      <a href="#" class="action icon-share gray"></a>
+      <a href="" class="action icon-plus gray"></a>
+      <a href="" class="action icon-heart gray"></a>
+      <a href="" class="action icon-share gray"></a>
     </span>
+    </li>
+  </script>
 
-</script>
-
-
-             <!--view albums   <section id="albums" -->
   <script id="album-template" type="text/x-handlebars-template">
     <figure class="image">
       <img src="{{cover}}" width="128" height="128" alt="{{name}} - {{author}}">
@@ -202,7 +247,6 @@
   <script type="text/javascript" src="js/views/list.js"></script>
   <script type="text/javascript" src="js/views/album.js"></script>
   <script type="text/javascript" src="js/views/albums.js"></script>
-  <script type="text/javascript" src="js/views/artist.js"></script>
   <script type="text/javascript" src="js/routers/router.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   

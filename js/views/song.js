@@ -1,6 +1,5 @@
 Sfotipy.Views.Song = Backbone.View.extend({
   tagName: 'li',
-
   className: 'item border-bottom',
 
   events: {
@@ -29,14 +28,16 @@ Sfotipy.Views.Song = Backbone.View.extend({
   },
 
   love: function () {
-
-    alert("orpimiste el love");
+   // Sfotipy.app.artist.model.set(this.model.toJSON());
+    alert("orpimiste el love:  "+ this.model.get("name"));
+    return false
 
   },
 
   share: function () {
 
-    alert("apromiste al share");
+    alert("apromiste al share :" + this.model.get("name"));
+    return false;
 
   }
 });

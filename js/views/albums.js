@@ -2,6 +2,7 @@ Sfotipy.Views.Albums = Backbone.View.extend({
   el: $('#albums'),
 
   template: Handlebars.compile($("#album-template").html()),
+  //template: Handlebars.compile($("#current-album-template").html()),
 
   initialize: function () {
     this.listenTo(this.collection, "add", this.addOne, this);
@@ -9,6 +10,7 @@ Sfotipy.Views.Albums = Backbone.View.extend({
 
   render: function () {
     this.collection.forEach(this.addOne, this);
+
   },
 
   addOne: function (album) {

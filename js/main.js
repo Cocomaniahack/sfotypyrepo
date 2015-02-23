@@ -4,9 +4,9 @@ Sfotipy.app = new Sfotipy.Router();
 
 });
 
-/*Sfotipy = {};
+//Sfotipy = {};
 
-Sfotipy.Song = Backbone.Model.extend({});//clases cancion
+/*Sfotipy.Song = Backbone.Model.extend({});//clases cancion
 
 
 Sfotipy.Songs = Backbone.Collection.extend({

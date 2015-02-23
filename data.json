@@ -1,8 +1,9 @@
 {
   "G I R L": {
+    "Album": "G I R L",
     "author": "Pharrel Williams",
     "cover": "img/songs/girl.jpeg",
-    "year": 2014,
+    "year": "2014",
     "songs": [
       {
         "name": "Marilyn Monroe",
@@ -31,9 +32,10 @@
     ]
   },
   "Ride the Lightning": {
+    "Album": "Ride the Lightning",
     "author": "Metallica",
     "cover": "img/songs/ride-the-lightning.jpg",
-    "year": 1984,
+    "year": "1984",
     "songs": [
       {
         "name": "Fight fire with fire",

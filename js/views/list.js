@@ -7,8 +7,8 @@ Sfotipy.Views.List = Backbone.View.extend({
   },
 
   render: function () {
-    this.$el.empty();
-    this.addAll();
+    this.$el.empty();//elimino todos lo elementos
+    this.addAll();//agrego los nuevos elementos
   },
 
   addOne: function (song) {

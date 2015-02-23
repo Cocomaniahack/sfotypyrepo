@@ -10,7 +10,7 @@ Sfotipy.Views.Player = Backbone.View.extend({
   },
 
   render: function () {
-    var song = this.model.toJSON();
-    this.$el.html(this.template(song));
+    var song1 = this.model.toJSON();
+    this.$el.html(this.template(song1));
   }
 });

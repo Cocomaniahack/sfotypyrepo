@@ -11,13 +11,14 @@ Sfotipy.Router = Backbone.Router.extend({
     this.songs = new Sfotipy.Collections.Songs();
     this.playlist = new Sfotipy.Views.List({ collection: this.songs });
     this.player = new Sfotipy.Views.Player({ model: new Sfotipy.Models.Song() });
+    this.artist = new Sfotipy.Views.Artist({ model: new Sfotipy.Models.Song() });
     this.albumlist = new Sfotipy.Views.Albums({ collection: this.albums });
 
     Backbone.history.start();
   },
 
   index: function () {
-    this.fetchData();
+    this.fetchData();//obtiene los datos al entrar al index
   },
 
   album: function (name) {
@@ -54,6 +55,7 @@ Sfotipy.Router = Backbone.Router.extend({
 
     this.current.album = this.jsonData[name];
     this.current.album.songs.forEach(this.addSong, this);
+
   },
 
   addSong: function (song) {

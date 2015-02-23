@@ -9,6 +9,9 @@ Sfotipy.Views.Album = Backbone.View.extend({
 
   template: Handlebars.compile($("#album-template").html()),
 
+
+  
+
   initialize: function () {
     this.listenTo(this.model, "change", this.render, this);
   },
@@ -21,7 +24,12 @@ Sfotipy.Views.Album = Backbone.View.extend({
   },
 
   navigate: function () {
-    Sfotipy.app.navigate("album/" + this.model.get("name"), { trigger: true });
+    Sfotipy.app.navigate("album/" + this.model.get("name"), { trigger: true }),
+    //Sfotipy.app.artist.model.set(this.model.toJSON());
+    Sfotipy.app.artist.model.set(this.model.toJSON());//envia datos a player.js
+  //alert("le has dado click al album"+ this.model.get("name"));
+
+
   }
 
 });

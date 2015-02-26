@@ -1,59 +1,45 @@
-Sfotipy.Views.Album = Backbone.View.extend({
-<<<<<<< HEAD
-  el: '#song-template',
+//Sfotipy = {}
+var coleccion = Backbone.Collection.extend({});
 
-  //tagName: 'li',
- // className: 'cambiar',
-=======
-  el: '.list',
+//coleccion.on("add" , function(){console.log(se ha agregado uno nuevo dato)});
 
-  //tagName: 'li',
-  //className: 'item border-botton',
->>>>>>> origin/master
-
- 
-
-
-
-<<<<<<< HEAD
+var modelo = Backbone.Model.extend({
 initialize: function(){
-   song-template.fetch();
-=======
-/*initialize: function(){
+console.log('nuevo Modelo');
+}
+});
 
-this.render();
->>>>>>> origin/master
 
+
+
+var vista = Backbone.View.extend({
+events: {
+'click .item.border-botton': 'add'
+},
+tagName: 'div',
+className: 'cuadro list',
+template: Handlebars.compile($("#div-template").html()),
+
+render: function(){
+      //var modelo =  this.model;
+      //var nombre = modelo.get('nombre');
+      //var lastname = modelo.get('lastname');
+
+      var data = this.template(this.model.toJSON());
+
+      this.$el.html(data);
 },
 
-  render: function() {
-     this.$el.html("<p>render en accion </p>");
-<<<<<<< HEAD
-  },
+add: function(e) {
+   alert(this.model.get("lastname"));
+   },
 
-
-
-
-  /*
-=======
-  }
-*/
-
->>>>>>> origin/master
-events: {
-    'click': 'navigate'
-     },
-    navigate: function(){
-<<<<<<< HEAD
-                alert("estas oprimiendo el boton");
-            }*/
+initialize: function(){
+    this.listenTo(this.model, "change", this.render, this);
+    //cada cambie en el modelo vuelva a renderizar la vista
+   }
 
 });
-var appView = new Sfotipy.Views.Album();
-=======
-                alert('ededede ');
-            }
 
-});
->>>>>>> origin/master
+//window.Sfotipy = Sfotipy;
 

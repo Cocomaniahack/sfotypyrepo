@@ -1,3 +1,4 @@
+//................................tercero........................................
 Sfotipy.Views.List = Backbone.View.extend({
   el: $(".playlist > .lista"),
 

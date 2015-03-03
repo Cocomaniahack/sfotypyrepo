@@ -1,3 +1,5 @@
+//................................................................
+
 Sfotipy.Views.Player = Backbone.View.extend({
   el: $(".music"),
 

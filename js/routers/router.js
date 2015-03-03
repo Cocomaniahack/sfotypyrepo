@@ -18,7 +18,10 @@ Sfotipy.Router = Backbone.Router.extend({
   },
 
   index: function () {
-    this.fetchData();//obtiene los datos al entrar al index
+   this.fetchData(),
+    
+    console.log("estas en INDEX");//obtiene los datos al entrar al index
+
   },
 
   album: function (name) {
@@ -49,6 +52,9 @@ Sfotipy.Router = Backbone.Router.extend({
 
     });
   },
+
+
+
 
   addSongs: function (name) {
     this.songs.reset();

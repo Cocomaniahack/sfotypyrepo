@@ -1,3 +1,20 @@
+//......................................................PRIMERO.......................................................
+
+Sfotipy.Collections.Albums = Backbone.Collection.extend({
+  model: Sfotipy.Models.Album 
+  //model: Sfotipy.Models.Album
+});//..................coleccion....................
+
+
+Sfotipy.Models.Album = Backbone.Model.extend({});//..........modelo...........
+
+
+
+
+
+
+
+
 Sfotipy.Views.Albums = Backbone.View.extend({
   el: $('#albums'),
 
@@ -14,8 +31,15 @@ Sfotipy.Views.Albums = Backbone.View.extend({
   },
 
   addOne: function (album) {
+
     var albumView = new Sfotipy.Views.Album({ model: album });
     this.$el.append(albumView.render().el);
+
   }
 
 });
+
+
+
+
+

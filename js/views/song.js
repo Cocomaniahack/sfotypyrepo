@@ -1,3 +1,13 @@
+//.............................cuarto carga la lista de canciones...................................
+
+
+Sfotipy.Collections.Songs = Backbone.Collection.extend({
+  model: Sfotipy.Models.Song
+});//.....................coleccion
+Sfotipy.Models.Song = Backbone.Model.extend({});//......................modelo
+
+
+
 Sfotipy.Views.Song = Backbone.View.extend({
   tagName: 'li',
   className: 'item border-bottom',
@@ -16,8 +26,8 @@ Sfotipy.Views.Song = Backbone.View.extend({
   },
 
   render: function () {
-    var song = this.model.toJSON()
-    var html = this.template(song);
+    var cancion = this.model.toJSON()
+    var html = this.template(cancion);
     this.$el.html(html);
     return this;
   },

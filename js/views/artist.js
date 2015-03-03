@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 Sfotipy.Views.Artist = Backbone.View.extend({
  el: $(".authors"),
 
